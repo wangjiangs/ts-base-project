@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family:"PingFangSC","微软雅黑";
+}
+html{
+    height:100%;
+}
+body{
+    height: 100%;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    position: relative;
+}
+.backgroundImage(@url){
+    background-image:@url;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.absoluteCenter{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.flexCenter{
+    .flex();
+    justify-content: center;
+}
+.flexBetween{
+    .flex();
+    justify-content: space-between;
+}
+.rect(@width, @height, @radius:0){
+    height: @height;
+    width: @width;
+    border-radius: @radius;
+}
+.square(@width,@radius:0){
+    .rect(@width, @width, @radius);
+}
+.circle(@radius){
+    .square(@radius, 50%);
+}
+.toast{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 5rem;
+    color:white;
+    z-index: 99;
+    border-radius: .5rem;
+    padding: 0 .5rem;
+    margin:0 auto;
+    span{
+        background-color: black;
+        border-radius: 1rem;
+        padding: 0 .3rem;
+    }
+    animation: toast 1.5s linear;;
+}
+@keyframes toast{
+    70%{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+.disabled{
+    opacity: .5;
+}
