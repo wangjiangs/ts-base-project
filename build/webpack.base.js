@@ -33,7 +33,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             template:"src/pages/index.pug",
             filename:"index.html",
-            title:"主页",
+            title:"TigerWallet下载",
             chunks:["index"],
             inject:"head",
         }),

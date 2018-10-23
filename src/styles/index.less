@@ -1,4 +1,92 @@
 @import "./common.less";
-p{
-    color: red
+h1{
+    top: 24px;
+    position: relative;
+    font-size: 1.33rem;
+    font-weight: 600;
+    color: #555B94;
+    line-height: 1.83rem;
+}
+button{
+    .rect(6.22rem, 2.33rem, 0.33rem);
+    background:linear-gradient(90deg,rgba(142,148,198,1) 0%,rgba(85,91,148,1) 100%);
+    font-size: .89rem;
+    color:white;
+    font-weight: 500;
+    margin-top: 2.83rem;
+    border-color: transparent;
+    border-width: 0;
+}
+p#afterInstall{
+    display: none;
+    color: #32b2a7;
+    line-height: 2.33rem;
+    margin-top: 2.83rem;
+}
+p#version{
+    font-size: .78rem;
+    color:#555B94;
+    line-height: 1.11rem;
+    margin-top: 2.11rem;
+}
+p#update{
+    margin-top: .3rem;
+    font-size: .67rem;
+    color:#555B94;
+    line-height: .94rem;
+}
+p#tips{
+    color:#FC6262;
+    font-size: .78rem;
+    font-weight: 400;
+    line-height: 1.22rem;
+    margin-top: 1.33rem;
+    text-align: left;
+}
+#tutor{
+    div{
+        display: none
+    }
+    h3{
+        margin-top: 3.33rem;
+        margin-bottom: 1.72rem;
+        color:#767990;
+        font-size: .89rem;
+        font-weight: 500;
+        line-height: 1.22rem;
+        span{
+            display: inline-block;
+            .rect(6rem, .44rem);
+            .backgroundImage(url(../../static/imgs/Group@2x.png))
+        }
+    }
+    p{
+        font-size: .78rem;
+        color:#555B94;
+        line-height: 1.11rem;
+        font-weight: 400;
+        text-align: left;
+        span{
+            color:#63D0AB;
+        }
+    }
+    img{
+        width: 100%;
+        margin-top: 1.28rem;
+    }
+}
+img.tip{
+    width: 150px;
+    position: absolute;
+    right: 10px;
+    top: 5px;
+}
+#mask{
+    position: fixed;
+    background:rgba(0, 0, 0, .5);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
 }

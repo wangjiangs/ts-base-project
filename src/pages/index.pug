@@ -4,5 +4,32 @@ html(lang="en")
         meta(name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no")
         meta(http-equiv="X-UA-Compatible" content="ie=edge")
         title= htmlWebpackPlugin.options.title
+        script.
+            var _hmt = _hmt || [];
+            (function() {
+                var hm = document.createElement("script");
+                hm.src = "https://hm.baidu.com/hm.js?736c13988acc893206caf97ec2de528e";
+                var s = document.getElementsByTagName("script")[0]; 
+                s.parentNode.insertBefore(hm, s);
+            })();
     body
-        h1 hello world!
+        h1.title 下载 TigerWallet
+        button#install 点击安装
+        p#afterInstall 请回到桌面查看APP安装进度！
+        p#version 版本: V 1.1.1 - 6.43MB
+        p#update 更新于: 2018-09-17
+        p#tips 若无法安装或任何原因需卸载原版本，请先备份好助记词，再重新安装新版本
+        #tutor
+            #tutor-iOS
+                h3 #[span]安装教程#[span]
+                p 1. 第一次打开 #[span TigerWallet] 时会弹出如下窗口提示。
+                img(src="../../static/imgs/app下载指引@2x.png")
+                p 2. 在手机的【#[span 设置]】 - 【#[span 通用]】 - 【#[span 设备管理]】中找到TigerWallet证书
+                img(src="../../static/imgs/设备管理@2x.png")
+                p 3. 点击#[span 信任]此证书就可以开始使用钱包了。
+                img(src="../../static/imgs/设备管理1@2x.png")
+            #tutor-Android
+                img(src="../../static/imgs/Android@2x.png")
+        #mask
+
+
